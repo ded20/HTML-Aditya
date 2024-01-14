@@ -1,0 +1,52 @@
+/* #menu {
+    margin-left: 100%;
+    margin-right: 10%;
+} */
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/image/scenery.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
+  }
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;;
+    color: #FFFFFF;
+  }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat';
+    font-size: clamp(16px, 4vw, 30px);
+    color: #FFFFFF;
+    ;
+  }
+.big-font {
+    background: linear-gradient(
+    to right,rgb(255, 0, 0),#5871ff 50%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat';
+    font-size: clamp(52px, 4vw, 100px);
+}
+
+#copyright {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))
+}
+
+.start {
+    -webkit-box-reflect: below 3px linear-gradient(transparent, #0005);
+}
