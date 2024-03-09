@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Dealtron</title>
+  <title>My Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -34,7 +34,7 @@
     <div class="container-fluid" id="inside-header">
       <a class="navbar-brand ms-lg-3 " href="#">
         <img src="image/logo.png" width="40" height="40" class="d-inline-block align-top me-3" alt="">
-        Aditya's Shop
+        Aditya's Page
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,17 +46,17 @@
           </li>
           <li class="nav-item dropdown mx-lg-2">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Shop
+              Skills
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Buy</a></li>
-              <li><a class="dropdown-item" href="#">Sell</a></li>
+              <li><a class="dropdown-item" href="#">Hard Skill</a></li>
+              <li><a class="dropdown-item" href="#">Soft Skill</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Complain</a></li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
             </ul>
           </li>
           <li class="nav-item mx-lg-2">
-            <a class="nav-link" href="">About</a>
+            <a class="nav-link" href="">About Me</a>
           </li>
           <li class="nav-item mx-lg-2">
             <a class="nav-link" href="">Blog</a>
@@ -65,7 +65,7 @@
             <a class="nav-link" href="">Contact</a>
           </li>
           <li class="nav-item mx-lg-2">
-            <a class="nav-link" href="">Pages</a>
+            <a class="nav-link" href="">Optional</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -90,11 +90,31 @@
         HELLO THERE!
     </div>
     <div class="lorem-ipsum text-center">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod sem id magna tincidunt rutrum. Integer sit amet blandit ex. Sed vitae cursus leo. Vestibulum leo lectus, euismod ac nisi a, mattis volutpat massa.
+      I'm a bachelor graduate with experience working as a data analyst, data scientist, and data engineer. I possess a strong foundation in programming, database administration, data manipulation, classification, and visualization techniques. I am adept at working both independently and as part of a team.
     </div>
-      <button class="btn-light btn my-3 btn-lg start" type="button" >Start!</button>
-  </div>
+    <button class="btn-light btn my-3 btn-lg start" type="button" >Know Me More!</button>
+    <div id="slider-container" class="mt-5">
+      <!-- Adjust the min and max values of the slider -->
+      <input type="range" min="25" max="50" value="50" id="slider">
+    </div>
   
+    <div id="image-container">
+      <img id="image" src="image/logo.png" alt="placeholder image">
+    </div>
+  
+    <script>
+      const slider = document.getElementById("slider");
+      const image = document.getElementById("image");
+    
+      slider.addEventListener("input", function() {
+        // Calculate scale factor based on slider value
+        const scaleFactor = parseFloat(this.value) / 100;
+        // Ensure the image maintains aspect ratio
+        image.style.maxWidth = `${scaleFactor * 100}%`;
+        image.style.maxHeight = `${scaleFactor * 100}%`;
+      });
+    </script>
+  </div>
 
 </body>
 <footer class="text-center" id="footer">
@@ -116,7 +136,7 @@
       <a
         data-mdb-ripple-init
         class="btn btn-link btn-floating btn-lg text-body m-1"
-        href="https://www.instagram.com/lessthanxyz/"
+        href="https://www.instagram.com/aded.mr/"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-instagram fa-2x"></i

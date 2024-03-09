@@ -50,3 +50,14 @@ body {
 .start {
     -webkit-box-reflect: below 3px linear-gradient(transparent, #0005);
 }
+
+#slider {
+  width: 300px;
+}
+#image-container {
+  text-align: center;
+}
+#image {
+  width: 50%;
+  transition: transform 1s ease;
+}
